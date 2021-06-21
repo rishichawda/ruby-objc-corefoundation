@@ -14,3 +14,11 @@ end
 task lint_all: [] do
   sh 'rubocop --auto-correct-all'
 end
+
+task build_debug: [] do
+  sh 'cd CFPrefs && xcodebuild -scheme CFPrefs -configuration Debug build'
+end
+
+task build_release: [] do
+  sh 'cd CFPrefs && xcodebuild -scheme CFPrefs -configuration Release build'
+end
