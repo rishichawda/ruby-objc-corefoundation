@@ -7,11 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreFoundation/CoreFoundation.h>
+#import <Ruby/ruby.h>
+#import "RubyHelpers.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CFGetDomainPreference : NSObject
--(const char *)GetPreferenceValue:(char *)key
+-(RubyData *)GetPreferenceValue:(char *)key
                      domain:(char *) domain
                    username:(char *) username
                    hostname:(char *) hostname

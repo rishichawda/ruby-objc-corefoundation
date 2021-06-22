@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B676E912681FD6100E3DBC7 /* RubyHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B676E902681FD6100E3DBC7 /* RubyHelpers.m */; };
+		5B676E94268202A200E3DBC7 /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B676E93268202A200E3DBC7 /* Ruby.framework */; };
+		5B676E97268215B200E3DBC7 /* RubyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B676E96268215B200E3DBC7 /* RubyData.m */; };
 		5BB1C413267F670500B8520E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB1C412267F670500B8520E /* main.m */; };
 		5BB1C41B267F687A00B8520E /* CFGetDomainPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB1C41A267F687A00B8520E /* CFGetDomainPreference.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B676E8F2681FD6100E3DBC7 /* RubyHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubyHelpers.h; sourceTree = "<group>"; };
+		5B676E902681FD6100E3DBC7 /* RubyHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubyHelpers.m; sourceTree = "<group>"; };
+		5B676E93268202A200E3DBC7 /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = System/Library/Frameworks/Ruby.framework; sourceTree = SDKROOT; };
+		5B676E95268215B200E3DBC7 /* RubyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RubyData.h; sourceTree = "<group>"; };
+		5B676E96268215B200E3DBC7 /* RubyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubyData.m; sourceTree = "<group>"; };
 		5BB1C40F267F670500B8520E /* CFPrefs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CFPrefs; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB1C412267F670500B8520E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BB1C419267F687A00B8520E /* CFGetDomainPreference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFGetDomainPreference.h; sourceTree = "<group>"; };
@@ -35,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B676E94268202A200E3DBC7 /* Ruby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B676E92268202A200E3DBC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B676E93268202A200E3DBC7 /* Ruby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5BB1C406267F670500B8520E = {
 			isa = PBXGroup;
 			children = (
 				5BB1C411267F670500B8520E /* CFPrefs */,
 				5BB1C410267F670500B8520E /* Products */,
+				5B676E92268202A200E3DBC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +81,10 @@
 				5BB1C412267F670500B8520E /* main.m */,
 				5BB1C419267F687A00B8520E /* CFGetDomainPreference.h */,
 				5BB1C41A267F687A00B8520E /* CFGetDomainPreference.m */,
+				5B676E8F2681FD6100E3DBC7 /* RubyHelpers.h */,
+				5B676E902681FD6100E3DBC7 /* RubyHelpers.m */,
+				5B676E95268215B200E3DBC7 /* RubyData.h */,
+				5B676E96268215B200E3DBC7 /* RubyData.m */,
 			);
 			path = CFPrefs;
 			sourceTree = "<group>";
@@ -123,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B676E912681FD6100E3DBC7 /* RubyHelpers.m in Sources */,
+				5B676E97268215B200E3DBC7 /* RubyData.m in Sources */,
 				5BB1C41B267F687A00B8520E /* CFGetDomainPreference.m in Sources */,
 				5BB1C413267F670500B8520E /* main.m in Sources */,
 			);

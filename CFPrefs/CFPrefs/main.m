@@ -6,14 +6,16 @@
 //
 
 #import "CFGetDomainPreference.h"
+#import "RubyHelpers.h"
 
 int main(int argc, const char * argv[]) {
     return 0;
 }
 
-extern const char * GetPreferencesValue(char * key, char * domain, char * user, char * hostname, char * type){
+extern RubyData * GetPreferencesValue(char * key, char * domain, char * user, char * hostname, char * type){
     @autoreleasepool {
         CFGetDomainPreference *getPref = [[CFGetDomainPreference alloc] init];
-        return [getPref GetPreferenceValue:key domain:domain username:user hostname:hostname type:type];
+        RubyData *rdata = [getPref GetPreferenceValue:key domain:domain username:user hostname:hostname type:type];
+        return rdata;
     }
 }
